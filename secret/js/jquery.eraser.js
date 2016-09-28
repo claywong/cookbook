@@ -63,8 +63,8 @@
                 pos = $this.offset(),
                 $canvas = $('<canvas/>'),
                 canvas = $canvas.get(0),
-                size = (options && options.size) ? options.size : 40,
-                completeRatio = (options && options.completeRatio) ? options.completeRatio : .7,
+                size = (options && options.size) ? options.size : 70,
+                completeRatio = (options && options.completeRatio) ? options.completeRatio : .9,
                 completeFunction = (options && options.completeFunction) ? options.completeFunction : null,
                 progressFunction = (options && options.progressFunction) ? options.progressFunction : null,
                 zIndex = $this.css('z-index') == "auto"?1:$this.css('z-index'),
@@ -79,9 +79,10 @@
             $this.after($canvas);
             canvas.id = that.id;
             canvas.className = that.className;
-            canvas.width = width;
-            canvas.height = height;
-            ctx.drawImage(that, 0, 0);
+            canvas.width = 640;
+            canvas.height = $(window).height()*960/960;
+            ctx.drawImage( that, 0, 0,640,$(window).height()*960/960);
+
             $this.remove();
 
             // prepare context for drawing operations
@@ -207,7 +208,7 @@
 
     evaluatePoint: function(data, tx, ty) {
       var p = Math.floor(tx/data.size) + Math.floor( ty / data.size ) * data.colParts;
-
+      //console.log("p="+p);
       if ( p >= 0 && p < data.numParts ) {
         data.ratio += data.parts[p];
         data.parts[p] = 0;
