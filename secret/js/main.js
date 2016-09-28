@@ -245,62 +245,6 @@ $(window).on("load", function () {
 
                     console.log("the current turning page is" + page);
                     $(".page").removeClass("f-hide");
-                    //if (page == 2) {
-                    //
-                    //    if (pageFlag[page - 1] == 0) {
-                    //        pageFlag[page - 1] = 1;
-                    //        $(".flipbook").turn("disable", true);
-                    //        // setTimeout(CloudIn, 500);
-                    //        //CloudIn1($(".cloudc"),$("cloud3"));
-                    //
-                    //        // $("#text2").removeClass("f-hide");
-                    //        // $("#cloudc1").removeClass("f-hide");
-                    //        //$("#text2").on("touchstart", initTip);
-                    //
-                    //        function initTip() {
-                    //            console.log("page:" + page);
-                    //            // CloudOut1($(".cloudc"),$("cloud3"));
-                    //            //$("#cloudc1").addClass("f-hide");
-                    //           // $("#text2").addClass("f-hide");
-                    //            $("#mask" + page).eraser({
-                    //                progressFunction: function (p) {
-                    //                    console.log(Math.round(p * 100) + "%");
-                    //                    if (p > 0.6) {
-                    //
-                    //                        $("#mask" + page).eraser("clear");
-                    //                        setTimeout(function () {
-                    //                            //CloudIn1($(".cloudc"),$("cloud3"));
-                    //                            $("#cloudc1").removeClass("f-hide");
-                    //                            $("#text3").removeClass("f-hide");
-                    //                            $(".flipbook").turn("disable", false);
-                    //                            // $("#text3").on("touchend", function() {
-                    //
-                    //                            //CloudOut1();
-                    //                            //$("#text3").addClass("f-hide");
-                    //                            //$(".flipbook").turn("peel", "br");
-                    //                            setTimeout(function () {
-                    //                                $("#tip" + (page - 1)).removeClass("f-hide");
-                    //                                // $("#tip" + (page - 1)).on("touchend", function() {
-                    //                                //     $("#tip").addClass("f-hide");
-                    //                                // });
-                    //                            }, 400);
-                    //
-                    //
-                    //                            // });
-                    //
-                    //                        }, 500);
-                    //
-                    //
-                    //                    }
-                    //                }
-                    //            });
-                    //
-                    //        }
-                    //
-                    //    }
-                    //
-                    //
-                    //}
                     if (page >= 2) {
 
                         if (pageFlag[page - 1] == 0) {
