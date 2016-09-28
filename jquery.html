@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.1.0.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").hide();
+
+            });
+
+        });
+
+    </script>
+    <script>
+        function afterText() {
+            var txt1 = "<b>I </b>";
+            var txt2 = $("<i></i>").text("love ");
+            var txt3 = document.createElement("big");
+            txt3.innerHTML = "jQuery!";
+            $("img").after(txt1,txt2,txt3);
+
+        }
+    </script>
+</head>
+
+<body>
+<h2>This is a heading</h2>
+<p>This is a paragraph.</p>
+<p> This is another paragraph.</p>
+<button type="button">click me</button>
+
+<img src="2.html" alt="w3cschool Logo" width="100px" height="100px">
+<br>
+<button onclick="afterText()">在图片后面插入文字</button>
+</body>
+</html>

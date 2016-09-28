@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <base target="_blank">
+    <title>波洛时报</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="header__inner">
+        <a href="/">
+            <h1 class="header__title">波洛时报</h1>
+        </a>
+        <button class="search__button"></button>
+        <div class="menu-collapse">
+            <div class="hamburger"></div>
+        </div>
+    </div>
+    <div class="search__field">
+        <form action="/search/" method="get">
+            <input class="search__input-field" type="text" name="text" placeholder="搜索波洛时报">
+        </form>
+    </div>
+</header>
+
+<nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__item"><a href="#">推荐</a></li>
+        <li class="nav__item"><a href="#">社会</a></li>
+        <li class="nav__item"><a href="#">文化</a></li>
+        <li class="nav__item"><a href="#">科技</a></li>
+        <li class="nav__item"><a href="#">环境</a></li>
+    </ul>
+</nav>
+
+<div class="nav__overlay"></div>
+
+<main>
+    <section class="content">
+        <section class="hero">
+            <article class="description">
+                <h2>英国王室的品牌价值</h2>
+                <p>
+                    9月9日，女王伊丽莎白二世将打破维多利亚女王的记录，成为英国历史上在位时间最长的君主，而最新的数据表明这位长寿女王...
+                </p>
+            </article>
+        </section>
+
+        <section class="news top-news">
+            <h2 class="news__title">今日头条<a href="#" class="news__more">+ 更多</a></h2>
+            <ul>
+                <li class="top-news__item">
+                    <a href="#">
+                        <img class="top-news__item__img" src="images/bear_market.png" alt="bear market"/>
+                        <p class="top-news__item__title">全球半数新兴市场跌入熊市</p>
+                    </a>
+                </li>
+                <li class="top-news__item">
+                    <a href="#">
+                        <img class="top-news__item__img" src="images/aging.png" alt="bear market"/>
+                        <p class="top-news__item__title">2050年，中国将有一半人口在50岁以上</p>
+                    </a>
+                </li>
+                <li class="top-news__item">
+                    <a href="#">
+                        <img class="top-news__item__img" src="images/icebucket.png" alt="bear market"/>
+                        <p class="top-news__item__title">各国家庭开销对比、冰桶挑战捐款去向</p>
+                    </a>
+                </li>
+                <li class="top-news__item">
+                    <a href="#">
+                        <img class="top-news__item__img" src="images/livable.png" alt="bear market"/>
+                        <p class="top-news__item__title">世界宜居城市排名揭示全球稳定度下降</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="scores">
+            <table class="scores__table">
+                <thead>
+                <tr>
+                    <th>日期</th>
+                    <th class="scores__location">地点</th>
+                    <th>队伍</th>
+                    <th colspan="2">比分</th>
+                    <th>队伍</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>周五</td>
+                    <td class="scores__location">广州</td>
+                    <td>公牛</td>
+                    <td>19</td>
+                    <td class="winner">21</td>
+                    <td class="winner">火狐</td>
+                </tr>
+                <tr>
+                    <td>周五</td>
+                    <td class="scores__location">上海</td>
+                    <td class="winner">雪熊</td>
+                    <td class="winner">3</td>
+                    <td>1</td>
+                    <td>火狐</td>
+                </tr>
+                <tr>
+                    <td>周六</td>
+                    <td class="scores__location">深圳</td>
+                    <td class="winner">黑狼</td>
+                    <td class="winner">7</td>
+                    <td>0</td>
+                    <td>风豹</td>
+                </tr>
+                <tr>
+                    <td>周日</td>
+                    <td class="scores__location">北京</td>
+                    <td>蓝鸟</td>
+                    <td>11</td>
+                    <td class="winner">12</td>
+                    <td class="winner">河蟹</td>
+                </tr>
+                <tr>
+                    <td>周日</td>
+                    <td class="scores__location">杭州</td>
+                    <td class="winner">赤鹿</td>
+                    <td class="winner">6</td>
+                    <td>2</td>
+                    <td>火狐</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="weather">
+            <span class="weather__location">深圳市</span>
+            <span class="weather__description">晴转多云</span>
+            <div class="weather__today">
+                <img class="weather__today__image" src="images/Haze.png" alt="Haze icon">
+                <span class="weather__today__temp">13</span>
+                <span class="weather__today__deg">&deg;C</span>
+            </div>
+            <ul class="weather__next">
+                <li class="weather__next__item">
+                    <span>明天</span>
+                    <img class="weather__next__image" src="images/sunny.png" alt="sunny icon">
+                    <span>13 &deg;C</span>
+                </li>
+                <li class="weather__next__item">
+                    <span>后天</span>
+                    <img class="weather__next__image" src="images/Slight-Drizzle.png" alt="slight drizzle icon">
+                    <span>13 &deg;C</span>
+                </li>
+                <li class="weather__next__item">
+                    <span>周三</span>
+                    <img class="weather__next__image" src="images/Drizzle.png" alt="Drizzle icon">
+                    <span>13 &deg;C</span>
+                </li>
+                <li class="weather__next__item">
+                    <span>周四</span>
+                    <img class="weather__next__image" src="images/Mostly-Cloudy.png" alt="mostly cloudy icon">
+                    <span>13 &deg;C</span>
+                </li>
+                <li class="weather__next__item">
+                    <span>周五</span>
+                    <img class="weather__next__image" src="images/sunny.png" alt="sunny icon">
+                    <span>13 &deg;C</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="news recent-news">
+            <h2 class="news__title">近日热门<a href="#" class="news__more">+ 更多</a></h2>
+            <ul>
+                <li class="snippet">
+                    <h3 class="snippet__title"><a href="#">昂贵的白宫国宴：人均开销上千美元</a></h3>
+                    <div class="snippet__thumbnail">
+                        <a href="#">
+                            <picture>
+                                <source media="(max-width: 700px)" sizes="25vw"
+                                        srcset="images/ruins-thumb.jpg 170w, images/ruins-small.jpg 445w">
+                                <source media="(min-width: 701px)" sizes="50vw"
+                                        srcset="images/ruins-thumb.jpg 170w, images/ruins-small.jpg 445w">
+                                <img src="images/ruins-small.jpg" alt="picture of ruins">
+                            </picture>
+                        </a>
+                    </div>
+                    <p class="snippet__description">
+                        白宫国宴的传统可追溯于1874年，历任总统对于国宴有各自的想法，并不是每次外国元首来访都会大操大办。根据美联社的整理资料，历史上举办国宴次数最多的总统是上世纪60年代的林登·约翰逊，其在任的8年间共举办54次国宴，而奥巴马算是史上“最节俭”的总统之一，举行国宴的次数仅多于杜鲁门总统的6次。
+                    </p>
+                </li>
+                <li class="snippet">
+                    <h3 class="snippet__title"><a href="#">中国人购买iPhone仍然非常吃力</a></h3>
+                    <div class="snippet__thumbnail">
+                        <a href="#">
+                            <picture>
+                                <source media="(max-width: 700px)" sizes="25vw"
+                                        srcset="images/ruins-thumb.jpg 170w, images/ruins-small.jpg 445w">
+                                <source media="(min-width: 701px)" sizes="50vw"
+                                        srcset="images/ruins-thumb.jpg 170w, images/ruins-small.jpg 445w">
+                                <img src="images/ruins-small.jpg" alt="picture of ruins">
+                            </picture>
+                        </a>
+                    </div>
+                    <p class="snippet__description">
+                        报告称在北京和上海想购买一部iPhone
+                        6，需要花费的工作时长为217.8小时和163.8小时，这个数字不仅远高于纽约的24小时、加拿大多伦多的37.2小时，也是香港51.9小时、台北69.2小时的数倍。对比2012年的此项报告，当时在北京和上海购买一部iPhone所需工时为184小时和142小时，情况并没有改观。
+                    </p>
+                </li>
+                <li class="snippet">
+                    <h3 class="snippet__title"><a href="#">亚裔将成美最大移民群体</a></h3>
+                    <div class="snippet__thumbnail">
+                        <a href="#">
+                            <picture>
+                                <source media="(max-width: 700px)" sizes="25vw"
+                                        srcset="images/ruins-thumb.jpg 170w, images/ruins-small.jpg 445w">
+                                <source media="(min-width: 701px)" sizes="50vw"
+                                        srcset="images/ruins-thumb.jpg 170w, images/ruins-small.jpg 445w">
+                                <img src="images/ruins-small.jpg" alt="picture of ruins">
+                            </picture>
+                        </a>
+                    </div>
+                    <p class="snippet__description">
+                        美国皮尤研究中心9月28日发布报告，揭示了1965年至今美国移民格局的变化，并试图预测未来40年美国移民的变化趋势。报告显示，从1965年起，亚裔移民在移民群体的比例不断升高，到2055年将成为美国最大的移民群体，占移民总量的36%，超过目前位居第一的西班牙裔移民。而白人移民的数量从1965年开始大幅减少，2015年只占整个美国移民总数的18%。
+                    </p>
+                </li>
+                <li class="snippet">
+                    <h3 class="snippet__title"><a href="#">“中国制造”不再便宜，成本已接近美国</a></h3>
+                    <div class="snippet__thumbnail">
+                        <a href="#">
+                            <picture>
+                                <source media="(max-width: 700px)" sizes="25vw"
+                                        srcset="images/ruins-thumb.jpg 170w, images/ruins-small.jpg 445w">
+                                <source media="(min-width: 701px)" sizes="50vw"
+                                        srcset="images/ruins-thumb.jpg 170w, images/ruins-small.jpg 445w">
+                                <img src="images/ruins-small.jpg" alt="picture of ruins">
+                            </picture>
+                        </a>
+                    </div>
+                    <p class="snippet__description">
+                        8月3日，《纽约时报》中文网发表文章《产业链大逆转，中国纱厂登陆美国》，称中国的纺纱业成本比美国高30%，中国的纱厂开始在美国设厂。其实，纺纱业只是一个缩影，随着人工、能源等成本的增长，中国制造业不再像一如既往纵横捭阖，国际竞争力有所下降。根据美国波士顿咨询集团的报告《全球制造业的经济大挪移》，中国的制造成本已经与美国相差无几。
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">关注我们</a></li>
+            <li><a href="#">加入我们</a></li>
+        </ul>
+    </footer>
+
+</main>
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

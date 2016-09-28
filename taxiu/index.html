@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="target-densitydpi=320,width=750,maximum-scale=1.0,user-scalable=no;"/>
+    <meta name="wap-font-scale" content="no">
+    <meta name="descriptiion" content="LOFTER-塔绣dddddddd公益"/>
+    <title>点图成绣，</title>
+    <link href="http://l.bst.126.net/mobile/r/core.css?2d5e5f6e86d9d735cf21fd819b27bc26" type="text/css"
+          rel="stylesheet"/>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            cursor: none;
+            -webkit-tap-highlight-color: transparent;
+            cursor: none;
+        }
+
+        html {
+            height: 100%;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            width: 750px;
+            height: 100%;
+            margin: 0 auto;
+            background: #f4f4f4;
+            font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+        }
+
+        img {
+            -webkit-touch-callout: none;
+        }
+
+        a {
+            color: #FFFFFF;
+            font-weight: normal;
+        }
+
+        .g-mn {
+            width: 100%;
+            height: 100%;
+            -webkit-transform: translateZ(0);
+        }
+
+        .m-page {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            background-color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .t-wrapper {
+            position: fixed;
+            top: 30px;
+            right: 20px;
+            z-index: 2;
+            width: 60px;
+            height: 40px;
+        }
+
+        .u-music {
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            width: 5px;
+            margin: 0 3px;
+            background-color: #454345;
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+
+        .u-music:nth-child(1) {
+            height: 10px;
+        }
+
+        .u-music:nth-child(2) {
+            height: 40px;
+            left: 10px;
+        }
+
+        .u-music:nth-child(3) {
+            height: 20px;
+            left: 20px;
+        }
+
+        .u-music:nth-child(4) {
+            height: 30px;
+            left: 30px;
+        }
+
+        .u-music1 {
+            -webkit-transform: translate3d(0, 0, 0);
+            -webkit-animation: play1 3s infinite;
+            animation: play1 3s infinite;
+        }
+
+        .u-music2 {
+            -webkit-transform: translate3d(0, 0, 0);
+            -webkit-animation: play2 2s infinite;
+            animation: play2 2s infinite;
+        }
+
+        .u-music3 {
+            -webkit-transform: translate3d(0, 0, 0);
+            -webkit-animation: play3 2s infinite;
+            animation: play3 2s infinite;
+        }
+
+        .u-music4 {
+            -webkit-transform: translate3d(0, 0, 0);
+            -webkit-animation: play4 2s infinite;
+            animation: play4 2s infinite;
+        }
+
+        @-webkit-keyframes play1 {
+            40% {
+                height: 40px;
+            }
+            94% {
+                height: 0px;
+            }
+            100% {
+                height: 10px;
+            }
+        }
+
+        @keyframes play1 {
+            40% {
+                height: 40px;
+            }
+            94% {
+                height: 0px;
+            }
+            100% {
+                height: 10px;
+            }
+        }
+
+        @-webkit-keyframes play2 {
+            10% {
+                height: 30px;
+            }
+            60% {
+                height: 0px;
+            }
+            100% {
+                height: 40px;
+            }
+        }
+
+        @keyframes play2 {
+            10% {
+                height: 30px;
+            }
+            60% {
+                height: 0px;
+            }
+            100% {
+                height: 40px;
+            }
+        }
+
+        @-webkit-keyframes play3 {
+            20% {
+                height: 40px;
+            }
+            80% {
+                height: 0px;
+            }
+            100% {
+                height: 20px;
+            }
+        }
+
+        @keyframes play3 {
+            20% {
+                height: 40px;
+            }
+            80% {
+                height: 0px;
+            }
+            100% {
+                height: 20px;
+            }
+        }
+
+        @-webkit-keyframes play4 {
+            10% {
+                height: 40px;
+            }
+            70% {
+                height: 0px;
+            }
+            100% {
+                height: 30px;
+            }
+        }
+
+        @keyframes play4 {
+            10% {
+                height: 40px;
+            }
+            70% {
+                height: 0px;
+            }
+            100% {
+                height: 30px;
+            }
+        }
+
+        @keyframes raw {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes raw {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes guide {
+            0% {
+                opacity: 0;
+                transform: scale(1);
+            }
+            80% {
+                transform: scale(1.2)
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        @-webkit-keyframes guide {
+            0% {
+                opacity: 0;
+                transform: scale(1.2);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        .m-page .u-btn-iwant {
+            display: block;
+            width: 690px;
+            height: 80px;
+            line-height: 80px;
+            position: absolute;
+            bottom: 6%;
+            left: 50%;
+            z-index: 6;
+            margin-left: -345px;
+            background-color: #C3B187;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 40px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .m-page .u-btn-iwant .file-upload {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            width: 690px;
+            height: 80px;
+            line-height: 80px;
+            opacity: 0;
+        }
+
+        .m-page .u-arrow {
+            display: block;
+            overflow: hidden;
+            width: 58px;
+            height: 16px;
+            margin: 0;
+            position: absolute;
+            bottom: 3%;
+            left: 50%;
+            z-index: 6;
+            margin-left: -29px;
+        }
+
+        /*.m-page1{background-image:url(/mobile/src/images/games/taxiu/entry/taxiu2.gif);background-repeat:no-repeat;background-size:750px 100%;}*/
+        .m-page1 .m-animation {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .m-page1 .m-animation img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .m-page1 .m-animation .u-raw {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 0, 0);
+            -webkit-animation: 1.5s raw;
+            animation: 1.5s raw;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+        }
+
+        .m-page1 .m-animation .u-taxiu {
+            z-index: 1;
+            opacity: 0;
+            -webkit-transform: translate3d(0, 0, 0);
+            -webkit-animation: 1.5s raw 1.5s;
+            animation: 1.5s raw 1.5s;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+        }
+
+        .m-page1 .m-guide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            opacity: 0;
+            -webkit-transform: translate3d(0, 0, 0);
+            -webkit-animation: 1s guide 5s cubic-bezier(0.000, 1.650, 0.400, 0.830);
+            animation: 1s guide 5s cubic-bezier(0.000, 1.650, 0.400, 0.830);
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+            background-color: #FFFFFF;
+        }
+
+        .m-page1 .m-guide .u-guide {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3
+            width: 100%;
+            height: auto;
+        }
+
+        .m-page2 img {
+            display: block;
+            margin: 53px auto;
+        }
+
+        .m-page3 .u-img-third1 {
+            display: block;
+            margin: 0 auto;
+            margin-top: 13%;
+            overflow: hidden;
+        }
+
+        .m-page3 .u-img-third2 {
+            display: block;
+            margin: 0 auto;
+            margin-top: 15%;
+            overflow: hidden;
+        }
+
+        .m-page3 .m-btns {
+            width: 750px;
+            height: 80px;
+            line-height: 80px;
+            position: absolute;
+            bottom: 6%;
+            left: 0;
+            overflow: hidden;
+        }
+
+        .m-page3 .m-btns button {
+            width: 330px;
+            height: 80px;
+            border: none;
+            border-radius: 40px;
+        }
+
+        .m-page3 .m-btns .u-btn-iwant2 {
+            position: relative;
+            display: inline-block;
+            margin: 0 30px;
+            width: 330px;
+            height: 80px;
+            line-height: 80px;
+            background-color: #C3B187;
+            color: #FFFFFF;
+            border-radius: 80px;
+            text-align: center;
+        }
+
+        .m-page3 .m-btns .u-btn-iwant2 .file-upload {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 330px;
+            height: 80px;
+            line-height: 80px;
+            opacity: 0;
+        }
+
+        .m-page3 .m-btns .u-btn-hot {
+            display: inline-block;
+            margin-left: -7px;
+            border: 2px solid #C3B187;
+            background-color: #FFFFFF;
+            color: #C3B187;
+        }
+
+        .cover {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .6);
+            z-index: 1000;
+        }
+
+        .w-alert {
+            position: absolute;
+            top: 200px;
+            left: 85px;
+            width: 580px;
+            height: 330px;
+            background: #fff;
+            border-radius: 15px;
+            z-index: 1000;
+        }
+
+        .w-alert p {
+            color: #666;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .w-alert .p1 {
+            margin-top: 72px;
+        }
+
+        .w-alert .p2 {
+            margin-top: 10px;
+        }
+
+        .w-alert .divider {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 580px;
+            height: 91px;
+            background: url(/mobile/src/images/games/taxiu/effect/divider.png)
+        }
+
+        .w-alert .btn {
+            width: 290px;
+            height: 91px;
+            line-height: 91px;
+            text-align: center;
+            font-size: 34px;
+        }
+
+        .w-alert .btn-cancel-upgrade {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .w-alert .btn-upgrade {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            color: #cdbb90;
+        }
+
+        .w-alert .btn-cancel-format {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .w-alert .btn-change {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            color: #cdbb90;
+        }
+
+        .w-alert .btn-change .file-upload {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 290px;
+            height: 88px;
+            line-height: 88px;
+            opacity: 0;
+        }
+
+        .w-alert .btn-continue {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .w-alert .btn-continue .file-upload {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 290px;
+            height: 88px;
+            line-height: 88px;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="t-wrapper" class="t-wrapper">
+    <div class="u-music u-music1"></div>
+    <div class="u-music u-music2"></div>
+    <div class="u-music u-music3"></div>
+    <div class="u-music u-music4"></div>
+</div>
+<div id="g-mn" class="g-mn">
+    <audio id="u-audio" src="http://www.lofter.com/mobile/src/images/games/taxiu/entry/bgmusic.mp3" loop="loop"
+           preload="auto" autoplay="autoplay"></audio>
+    <div class="m-page1 m-page section"><a href="#first"></a>
+        <div id="m-animation" class="m-animation"></div>
+        <div class="m-guide" id="m-guide"><img class="u-guide"
+                                               src="http://www.lofter.com/mobile/src/images/games/taxiu/entry/animate/guide.png"
+                                               alt=""></div>
+        <div class="u-btn-iwant" id="u-btn-iwant"><input class="file-upload" id="file-upload1" type="file"/>我也要玩</div>
+        <img id="u-arrow1" class="u-arrow" src="http://www.lofter.com/mobile/src/images/games/taxiu/entry/down1.png"
+             alt="向下"></div>
+    <div class="m-page2 m-page section"><img src="/mobile/src/images/games/taxiu/entry/second.png?01" alt="参与规则"
+                                             width="85%" height="auto">
+        <div class="u-btn-iwant" id="u-btn-iwant2"><input class="file-upload" id="file-upload2" type="file"/>我也要玩</div>
+        <img id="u-arrow2" class="u-arrow" src="http://www.lofter.com/mobile/src/images/games/taxiu/entry/down1.png"
+             alt="向下"></div>
+    <div class="m-page3 m-page section"><img class="u-img-third1" src="/mobile/src/images/games/taxiu/entry/third-1.png"
+                                             alt="风物大奖之旅" width="50%" height="auto"> <img class="u-img-third2"
+                                                                                          src="/mobile/src/images/games/taxiu/entry/third-2.png"
+                                                                                          alt="风物大奖之旅是什么" width="85%"
+                                                                                          height="auto">
+        <div class="m-btns">
+            <div class="u-btn-iwant2" id="u-btn-iwant3"><input class="file-upload" id="file-upload3" type="file"/>我也要玩
+            </div>
+            <button class="u-btn-hot" type="button">热门作品</button>
+        </div>
+    </div>
+</div>
+<canvas id="canvas-clip" style="display:none;"></canvas>
+<div class="cover f-dn" id="cover-taxiu"></div>
+<div class="w-alert w-alert-upgrade f-dn" id="w-alert-upgrade"><p class="p1">参与点图成绣活动</p>
+    <p class="p2">需先更新LOFTER至最新版本</p>
+    <div class="divider"></div>
+    <div class="btn btn-cancel-upgrade" id="btn-cancel-upgrade">取消</div>
+    <div class="btn btn-upgrade" id="btn-upgrade">更新</div>
+</div>
+<div class="w-alert w-alert-upgrade f-dn" id="w-alert-upgrade2"><p class="p1">当前版本较低，可能无法正常参与活动</p>
+    <p class="p2">请先更新LOFTER至最新版本</p>
+    <div class="divider"></div>
+    <div class="btn btn-continue" id="btn-continue">继续参与</div>
+    <div class="btn btn-upgrade" id="btn-upgrade2">更新</div>
+</div>
+<div class="w-alert w-alert-format f-dn" id="w-alert-format"><p class="p1">啊哦~</p>
+    <p class="p2">点图成绣只支持图片格式</p>
+    <div class="divider"></div>
+    <div class="btn btn-cancel-format" id="btn-cancel-format">取消</div>
+    <div class="btn btn-change" id="btn-change"><input class="file-upload" id="file-upload4" type="file"/>换张图</div>
+</div>
+<script type="text/javascript"> location.dwr = 'http://www.lofter.com/dwr/mobile/call/plaincall/';
+if (location.host == 'm.lofter.com') {
+    location.dwr = 'http://m.lofter.com/dwr/mobile/call/plaincall/';
+}
+location.hosturl = 'http://www.lofter.com';
+location.dirhost = 'http://www.lofter.com';
+location.f110 = 'http://www.lofter.com/rsc/img/ava/110.png';
+window.CF = {visitor: {userId: 0, mainBlogId: 0}};
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-31007899-1'], ['_setLocalGifPath', '/UA-31007899-1/__utm.gif'], ['_setLocalRemoteServerMode']);
+_gaq.push(['_setDomainName', 'lofter.com']);
+_gaq.push(['_trackPageview']);
+(function () {
+    var loadgajs = function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = 'http://wr.da.netease.com/ga.js';
+        var _handler = function () {
+            if (!_handler.isExeced) {
+                _handler.isExeced = true;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            }
+        };
+        if (!!document.addEventListener) {
+            document.body.addEventListener('load', _handler, false);
+        } else {
+            document.body.attachEvent('onload', _handler);
+        }
+        setTimeout(_handler, 500);
+    };
+    setTimeout(loadgajs, 500);
+})();
+(function () {
+    var loadtiming2js = function () {
+        var timing2 = document.createElement('script');
+        timing2.type = 'text/javascript';
+        timing2.async = true;
+        timing2.src = 'http://nos.netease.com/doc/timing3.js';
+        var _handler = function () {
+            if (!_handler.isExeced) {
+                _handler.isExeced = true;
+                var body = document.getElementsByTagName('body')[0];
+                body.appendChild(timing2);
+            }
+        };
+        if (!!document.addEventListener) {
+            document.body.addEventListener('load', _handler, false);
+        } else {
+            document.body.attachEvent('onload', _handler);
+        }
+        setTimeout(_handler, 8000);
+    };
+    setTimeout(loadtiming2js, 500);
+})();
+window.setTimeout(function () {
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }     , i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-70626253-1', 'auto');
+    ga('send', 'pageview');
+}, 300);  </script>
+<div id="module-template" style="display:none;"><textarea name="txt" id="txt-mdl-js">this.p={isLogin:true}</textarea>
+</div>
+<script type="text/javascript" charset="utf-8" src="http://l.bst.126.net/rsc/js/jquery-latest.min.js"></script>
+<script type="text/javascript" charset="utf-8"
+        src="http://l.bst.126.net/rsc/js/jquerypugin/jquery.fullpage.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        try {
+            $('#g-mn').fullpage();
+            $(document).on('click', '#u-arrow1', function () {
+                $.fn.fullpage.moveSectionDown();
+            });
+            $(document).on('click', '#u-arrow2', function () {
+                $.fn.fullpage.moveSectionDown();
+            });
+        } catch (e) {
+            console.error(e)
+        }
+    });
+    var imgArr = [],
+            amNode = document.getElementById('m-animation'),
+            raw = document.createElement('img'),
+            taxiu = document.createElement('img'),
+// guide = document.createElement('img'),
+            tempDOM;
+    raw.src = 'http://www.lofter.com/mobile/src/images/games/taxiu/entry/animate/raw.jpg';
+    raw.className = "u-raw";
+    raw.id = "u-raw";
+    taxiu.src = 'http://www.lofter.com/mobile/src/images/games/taxiu/entry/animate/taxiu.jpg';
+    taxiu.className = "u-taxiu";
+    taxiu.id = "u-taxiu";
+    for (var i = 1; i <= 21; i++) {
+        tempDOM = document.createElement('img');
+        tempDOM.src = '/mobile/src/images/games/taxiu/entry/animate/animation-' + i + '.png';
+        imgArr.push(tempDOM)
+    }
+    i = 0;
+    tempDOM = null;
+    var id = setInterval(function () {
+        amNode.innerHTML = '';
+        amNode.appendChild(imgArr[i]);
+        i++;
+        if (i === 21) {
+            clearInterval(id);
+            amNode.innerHTML = '';
+            amNode.appendChild(raw);
+            amNode.appendChild(taxiu);
+// amNode.appendChild(guide);
+            imgArr = null;
+            raw = null;
+            taxiu = null;
+// guide = null;
+            amNode = null;
+        }
+    }, 100);
+</script>
+<script src="http://l.bst.126.net/mobile/r/core.js?f3d3667284a8d873b0cc5c8daa184429" type="text/javascript"></script>
+<script src="http://l.bst.126.net/mobile/r/pt_page_games_taxiu_entry.js?8cf0ffb09359f7dee166c9170bdffd0b"
+        type="text/javascript"></script>
+</body>
+</html>

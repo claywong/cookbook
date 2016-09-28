@@ -1,0 +1,115 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-collapse {
+    display: none;
+}
+
+/*order reset */
+
+.hero, .top-news, .score, .weather, .recent-news {
+    order: 10;
+}
+
+@media (max-width: 549px) {
+    .search-button {
+        right: 50px;
+    }
+
+    .menu-collapse {
+        display: block;
+    }
+
+    .nav {
+        width: 100%;
+        background-color: #474747;
+        position: absolute;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        -webkit-transition: -webkit-transform .4s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: transform .4s cubic-bezier(0.19, 1, 0.22, 1);
+        z-index: 2;
+    }
+
+    .menu-open .nav {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .menu-open .nav-overlay, .search-open .nav-overlay {
+        position: fixed;
+        z-index: 1;
+        height: 101%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        -webkit-transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .nav-item {
+        display: list-item;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-item a {
+        display: block;
+        width: 100%;
+        color: #fff;
+    }
+
+}
+
+@media (min-width: 550px) {
+    .hero {
+        order: 0;
+        width: 65%;
+    }
+
+
+}
+
+@media (min-width: 700px) {
+    .hero {
+        width: 50%;
+    }
+
+    .top-news {
+        order: 1;
+        width: 50%;
+    }
+
+    .recent-news {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
+
+@media (min-width: 960px) {
+    .recent-news ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+@media (min-width: 1100px) {
+    main, .nav {
+        width: 1100px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1600px) {
+    main, .nav {
+        width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+    
+}
